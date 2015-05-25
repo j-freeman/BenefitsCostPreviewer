@@ -1,0 +1,87 @@
+﻿@model BenefitsCostPreviewer.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dependant1Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dependant1Name)
+        </dd>
+
+        <dt>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dependant2Name)
+        </dd>
+
+        <dt>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dependant3Name)
+        </dd>
+
+        <dt>
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dependant4Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnnualSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnnualSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnnualBenefitsCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnnualBenefitsCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayPeriodSalary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayPeriodSalary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayPeriodBenefitsCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayPeriodBenefitsCost)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

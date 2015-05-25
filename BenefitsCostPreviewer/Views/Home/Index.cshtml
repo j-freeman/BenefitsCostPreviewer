@@ -1,0 +1,56 @@
+﻿@using BenefitsCostPreviewer.Controllers
+@model BenefitsCostPreviewer.Models.Employee
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Enter Employee and Dependant Names Below</h2>
+
+        <hr />
+        @using (Html.BeginForm("Create", "Employee"))
+        {
+            <dl class="dl-horizontal">
+                <dt>
+                    Employee Name
+                </dt>
+
+                <dd>
+                    @Html.TextBox("name")
+                </dd>
+                <dt>
+                    Dependant Name(s)
+                </dt>
+
+                <dd>
+                    @Html.TextBox("d1Name")
+                </dd>
+                <dt>
+
+                </dt>
+
+                <dd>
+                    @Html.TextBox("d2Name")
+                </dd>
+                <dt>
+
+                </dt>
+
+                <dd>
+                    @Html.TextBox("d3Name")
+                </dd>
+                <dt>
+
+                </dt>
+
+                <dd>
+                    @Html.TextBox("d4Name")
+                </dd>
+            </dl>
+            <input type="submit" name="Submit" value="Submit" />
+        }
+    </div>
+</div>
